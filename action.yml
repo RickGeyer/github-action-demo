@@ -1,0 +1,15 @@
+name: 'Github Snowflake Create SP Action'
+description: 'This runs each .sql file in the sql folder when it is added or changed'
+author: 'Rick Geyer'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'Github token'
+    required: true
+  TENOR_TOKEN:
+    description: 'Tenor API token'
+    required: true
+
+runs:
+  using: 'node14'
+  main: 'dist/index.js'

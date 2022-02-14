@@ -1,0 +1,23 @@
+{
+  "name": "github-action-demo",
+  "version": "1.0.0",
+  "description": "Testing Github Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build src/action.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RickGeyer/github-action-demo.git"
+  },
+  "author": "Rick Geyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RickGeyer/github-action-demo/issues"
+  },
+  "homepage": "https://github.com/RickGeyer/github-action-demo#readme",
+  "dependencies": {
+    "@vercel/ncc": "^0.33.3"
+  }
+}
