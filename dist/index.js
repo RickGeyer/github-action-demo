@@ -8472,13 +8472,13 @@ const core = __nccwpck_require__(2186);
 const github = __nccwpck_require__(5438);
 
 const run = async() => {
-    const GITHUB_TOKEN = core.getInput('GITHUB_TOKEN');
-    const octokit = github.getOctokit(GITHUB_TOKEN);
+    // const GITHUB_TOKEN = core.getInput('GITHUB_TOKEN');
+    // const octokit = github.getOctokit(GITHUB_TOKEN);
 
-    const { context = {} } = github;
-    const { pull_request } = context.payload;
+    // const { context = {} } = github;
+    // const { pull_request } = context.payload;
     console.log('It is working!')
-    console.dir( pull_request );
+    // console.dir( pull_request );
 }
 
 run();
